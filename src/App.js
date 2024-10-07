@@ -14,7 +14,7 @@ function App() {
             <div className="App">
                 {/* Header with logo, company name, and navigation */}
                 <header className="App-header">
-                    <img src="/images/logo.png" className="App-logo" alt="logo" />
+                    <img src={`${process.env.PUBLIC_URL}/images/logo.png`} className="App-logo" alt="logo" />
                     <h1>Innovate Engineering Products</h1>
                     <nav>
                         <ul>
@@ -32,7 +32,7 @@ function App() {
                     {/* Video background */}
                     <div className="video-container">
                         <video autoPlay loop muted>
-                            <source src="/videos/background.mp4" type="video/mp4" />
+                            <source src={`${process.env.PUBLIC_URL}/videos/background.mp4`} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
